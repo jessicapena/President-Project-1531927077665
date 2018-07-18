@@ -1,0 +1,90 @@
+<!DOCTYPE html> <html><head>
+    <title>President Project</title>
+<style>body{
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+#donate h2 {text-shadow: 2px 2px #FFFFFF;}
+
+#eagles h2 {text-shadow: 2px 2px #C0C0C0;}
+p {
+    font-size: 20px;
+}
+    
+#header, #donate, #eagles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#header {
+    color: yellow;
+    background-image: url("https://media.giphy.com/media/3IaC81YOZudfa/giphy.gif");
+}
+
+#donate {
+    background: black;
+    color: yellow;
+}
+#eagles {
+    color: white;
+    background-image: url("data:image/jpeg;base64,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");
+}
+#pics img{
+    width: 30%;
+}
+
+#pics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    background: yellow;
+}
+
+#donate button {
+    width: 200px;   
+    height: 60px;
+    font-size: 30px;
+    background: yellow;
+    color: black;
+    border-radius: 10px;
+    border: dotted black 3px;
+}
+
+#donate button:hover {
+    background: black;
+    color: yellow;
+    border: dotted yellow 3px;
+}</style></head>
+<body>
+    <div id="header">
+        <h1><strong>Kendrick Lamar for President 2020</strong></h1>
+        <p><strong> The most A1 since Day 1</strong> </p>
+    </div>
+    <div id="donate">
+        <h2><marquee>Donate Now</marquee></h2>
+        <p>Every cent counts towards Kendrick's ideas.</p>
+        <button>DONATE!</button>
+    </div>
+    <div id="pics">
+        <img src="http://cache.umusic.com/_sites/kendricklamar.com/images/og.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pulitzer2018-portraits-kendrick-lamar.jpg/220px-Pulitzer2018-portraits-kendrick-lamar.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3c9Ypv5J7y2_oIb8DU4ASL9mg1wByFlylsOxVUPm1ams6PkMRjA">
+    </div>
+    <div id="eagles">
+        <h2><marquee>The "We Gon' Be Alright" Initiative</marquee></h2>
+        <p><em>If elected, I promise to grow money trees in every city to help repair all the damage caused by the previous election. We gon' be alright!</em></p>
+    </div>
+
+</body></html>
